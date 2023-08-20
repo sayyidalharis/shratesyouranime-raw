@@ -1,0 +1,305 @@
+/* styles/upload.module.css */
+
+.container {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center items vertically */
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main h1{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.authorMessage{
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(103, 88, 88);
+  font-weight: 500;
+}
+
+.reviewmsg{
+  font-size: 0.9em;
+  color: rgb(56, 34, 34);
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 450px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.reviewmsg a{
+  text-decoration: none;
+  color: rgb(103, 88, 88);
+  font-weight: 700;
+}
+
+.getData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center items vertically */
+  margin-bottom: 20px;
+}
+
+.getData h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.uploadButtonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center items vertically */
+    margin-bottom: 20px;
+}
+
+.uploadButton {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+
+.uploadButton:hover {
+    background-color: #113150;
+}
+
+.fileInput {
+    display: none;
+}
+.starRating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 153%; /* Adjust the font size as needed */
+  margin : 5px 0 17px;
+  text-align: center;
+  justify-content: center;
+  opacity: 0.6;
+}
+
+.ratingComment{
+  
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 17px;
+  /* make the text center if entering new line */
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+.customFileInput {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    background-color: white;
+    color: #007bff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.customFileInput:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.displayContainer{
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.displayImage {
+  max-width: 500px;
+} 
+
+.croppedImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center items vertically */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50%;
+  margin: 30px auto;
+}
+
+.ratingText {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.croppedImage {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.animeNameInput {
+  width: 59%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px dashed rgba(43, 41, 41, 0.9);
+  background-color: white;
+  color: rgba(43, 41, 41, 0.9);
+  font-size: 0.73em;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 20px;
+}
+
+.submitButton:hover {
+  background-color: rgba(43, 41, 41, 0.9);
+  color: white;
+}
+
+.successText {
+  color: green;
+  font-size: 1.2em;
+  margin-top: 35px;
+  text-align: center;
+  font-weight: 600px;
+}
+
+.croppedImageContainer .successText {
+  color: green;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.submitAllButtonContainer {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.submitAllButton {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(43, 41, 41, 0.9);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitAllButton:hover {
+  background-color: #ffffff;
+  color: rgba(43, 41, 41, 0.9);
+  border: 2px solid rgba(43, 41, 41, 0.9);
+}
+
+.noDataMessage {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.lastGap{
+  margin-top: 73px;
+}
+/* styles/upload.module.css */
+
+/* ... (other styles) */
+/* styles/upload.module.css */
+
+/* ... (other styles) */
+
+.loadingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loadingText {
+  color: white;
+  font-size: 24px;
+  margin-top: 16px; /* Add some gap between spinner and text */
+}
+
+/* Spinning animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loadingSpinner {
+  border: 4px solid rgba(255, 255, 255, 0.3); /* Lighter border color */
+  border-top: 4px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+
+@media (max-width: 768px) {
+  .authorMessage{
+    font-size: 0.8em;
+    margin-top: 20px;
+  }
+  .reviewmsg{
+    padding-top: 20px;
+    font-size: 0.9em;
+  }
+  .getData .p{
+    text-align: center;
+    max-width: 60%;
+    margin-bottom: 20px;
+  }
+  .croppedImageContainer{
+    width: 80%;
+  }
+  .animeNameInput{
+    
+    margin: 25px 0 20px;
+  }
+  .displayImage {
+    max-width: 373px;
+  } 
+}

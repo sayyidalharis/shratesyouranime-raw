@@ -1,0 +1,56 @@
+/* styles/header.module.css */
+
+.header {
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+  color: black;
+  padding: 10px;
+  position: relative;
+  z-index: 1000;
+  transition: background-color 0.3s; /* Add transition for smooth color change */
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.90); /* Change to fully opaque white when sticky */
+  box-shadow: 0px 2px 4px whitesmoke(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navContainer {
+  display: flex;
+  justify-content:space-between;
+  align-items: right;
+  padding: 10px 20px;
+}
+
+.leftNav {
+  text-align: left;
+}
+
+.rightNav {
+  text-align: right;
+}
+
+.navLink {
+  text-decoration: none;
+  color: black;
+  /* Add some padding to make the clickable area larger */
+  padding: 5px 10px;
+  /* Add a background color on hover to make it more obvious */
+  transition: background-color 0.2s;
+  font-size: 0.9em;
+}
+
+
+.leftNav .navLink {
+  font-size: 1.2em; /* Increase the font size */
+  color: black;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+  /* Add a subtle background color on hover */
+  background-color: rgba(255, 255, 255, 0.1);
+}

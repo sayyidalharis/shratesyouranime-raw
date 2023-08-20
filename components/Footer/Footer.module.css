@@ -1,0 +1,69 @@
+.footer {
+  text-align: center;
+  padding: 4px 0 0 0;
+  font-size: 14px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding-top: 5px;
+  /* box shadow on top */
+  }
+
+  
+/* New CSS for the footer container */
+.footerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  padding: 15px; /* Add some padding to the footer */
+}
+
+/* New CSS for the copyright text */
+.footerContent p {
+  margin: 0 2%; /* Add margin to create space between the text and icons */
+  font-size: 1.1em;
+  background-color: rgba(255, 255, 255, 0.8); /* Change to fully opaque white when sticky */
+  padding: 5px 37px 5px;
+  border-radius: 37px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.social_media_icons {
+  display: flex;
+  align-items: center;
+}
+
+.social_media_icons a {
+  display: inline-flex; /* Use inline-flex to control the size of the anchor element */
+  align-items: center; /* Align the icons vertically in the center */
+  justify-content: center; /* Align the icons horizontally in the center */
+  margin: 0 10px;
+  width: 37px; /* Set the width of the anchor element */
+  height: 37px; /* Set the height of the anchor element */
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 1); /* Change to fully opaque white when sticky */
+}
+
+.snsImg {
+  width: 20px; /* Adjust the size of the icons */
+  height: 20px; /* Adjust the size of the icons */
+  object-fit: cover; /* Ensure the icons maintain their aspect ratio */
+  margin: 0 50px; /* Add margin to create space between the text and icons */
+}
+
+.social_media_icons a {
+  animation: scaleIn 0.5s ease-in-out;
+}
+
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}

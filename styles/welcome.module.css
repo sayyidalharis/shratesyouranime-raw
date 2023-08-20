@@ -1,0 +1,246 @@
+.container {
+  padding-bottom: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Ensure the body covers the full viewport height */
+}
+
+.heading {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.heading2 {
+  font-size: 1.7em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.explanation {
+  font-size: 1.25em;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  max-width: 637px;
+}
+.explanation2 {
+  margin-top: 1.5%;
+  font-size: 1.1em;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  max-width: 673px;
+}
+
+.explanationText{
+  margin-bottom: 40px;
+}
+
+.explanation2 .explanationText{
+  margin-bottom: 30px;
+}
+
+.explanation2 .explanationText b{
+  font-weight: 500;
+}
+
+
+.explanationTextz{
+  padding-bottom: 37px;
+  margin-bottom: 73px;
+  text-align: center;
+  max-width: 500px;
+}
+/* style for Link in explanation2 class */
+.explanation2 a{
+  text-decoration: none;
+  /* color: rgb(128, 159, 169); */
+  color: rgb(113, 163, 179);
+  font-weight: 500;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  /* margin-bottom: 60px; */
+  font-family: 'Popins', sans-serif;
+}
+
+.linkItem {
+  width: 200px;
+  height: 300px; /* Set a fixed height for the container */
+  text-align: center;
+  transition: transform 0.3s, filter 0.3s;
+  padding-bottom: 100px;
+}
+
+.linkItem:hover {
+  transform: translateY(-5px);
+  filter: brightness(80%);
+}
+
+.linkItem img {
+  width: 100%;
+  height: 100%; /* Fill the container's height while maintaining aspect ratio */
+  object-fit: cover; /* Maintain the image's aspect ratio and cover the container */
+  border-radius: 8px;
+  filter: blur(5px);
+  transition: filter 0.3s;
+}
+
+.linkItem:hover img {
+  filter: blur(0);
+}
+
+.linkItem a{
+  text-decoration: none;
+  color: rgba(43, 41, 41, 0.9);
+}
+
+.linkItem p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.heading2{
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 0px;
+}
+
+.container h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 500;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 5px;
+
+}
+
+/* for another page  */
+
+  
+.inputContainer {
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.commentsContainer {
+  padding-top: 30px;
+  width: 63%;
+  max-width: 737px;
+  margin: 0 auto 0 auto;
+  padding-bottom: 80px;
+}
+
+.commentsContainer h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.commentsContainer ul {
+  list-style: none;
+  padding: 0;
+  margin-left: -12px;
+}
+
+.commentsContainer li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white; /* Light gray background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0); /* Subtle box shadow */
+
+}
+
+.commentSection {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.inputWrapper{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.commentSection input,
+.commentSection textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.commentSection textarea {
+  height: 60px;
+}
+
+.inputButton {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  background-color: #000000;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: auto; /* Push the button to the right */
+  margin-right: 12px;
+  margin-bottom: 70px;
+}
+
+.commentSection button:hover {
+  background-color: #113150;
+}
+
+.listComments{
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 22px;
+  }
+
+  .explanation {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links a {
+    margin-bottom: 10px;
+  }
+  .inputWrapper{
+    width: 250px;
+  }
+  .linkItem img {
+    filter: blur(0);
+  }
+
+  .commentsContainer{
+    width: 73%;
+    margin-left: 17%;
+  }
+}
