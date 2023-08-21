@@ -11,6 +11,7 @@ const HomePage = () => {
     <div className={styles.container}>
       <Head>
         <title>Home</title>
+        <meta name="google-site-verification" content="11NTk4i5yzpA6MZYuDHNBraRRMxQF6jNkrO6h5-JMP4" />
       </Head>
       <h1 className={styles.heading}>Welcome to <br/> RATE YOUR ANIME CHARACTERS SITE!</h1>
       <div className={styles.explanation}>
